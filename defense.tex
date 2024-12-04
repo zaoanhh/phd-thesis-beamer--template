@@ -6,12 +6,21 @@
 
 \usetheme{JD}
 \beamertemplatenavigationsymbolsempty
+% \usepackage{mathpazo} % With Euler Font
+\usepackage{eulerpx}
 
+% \usepackage{fourier}
+\usepackage{siunitx}
+\newcommand{\mylogo}{\linkeLogo}%linkeLogo, ustcLogo, or ustcAndLinkeLogo
+\newcommand{\romanN[1]}{\uppercase\expandafter{\romannumeral #1}}
+\newcommand{\titlewithlogo[1]}{\frametitle{\titlestyle{#1} \mylogo}}
 % header fields: usage
 % \field
 %     [short form (footline)]
 %     {long form on title page}
 %
+\graphicspath{{figures/}}
+\titlegraphic{\includegraphics[height=0.8cm]{ustc1.png}}
 \title
     [Open Source Modelling of Energy Infrastructure]
     {Open Source Modelling and Optimisation of\\ Energy Infrastructure at Urban Scale}
