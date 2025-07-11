@@ -34,7 +34,7 @@
 \newfontfamily{\geteFonta}[Path="fonts/"]{AliceInWonderland.ttf}
 \newfontfamily{\OptimaFont}[Path="fonts/"]{Optima.ttf}
 \newfontfamily{\AdobeFont}{Adobe-Garamond-Pro}[Path="fonts/",UprightFont = *-Regular,BoldFont = *-Bold]
-\newfontfamily{\LXGWWenKaiFont}{LXGWWenKai}[Path="fonts/",UprightFont = *-Regular,BoldFont = *-Bold]
+
 
 \usefonttheme{professionalfonts} %全部衬线
 \setbeamerfont{shouxie}{family=\shouxieFonta}
@@ -42,7 +42,7 @@
 \setbeamerfont{shouxieBlod}{family=\shouxieFontd}
 \setbeamerfont{gete}{family=\geteFonta}
 % \setsansfont[Path="fonts/",UprightFont = *orm,BoldFont = *obx, ItalicFont=*it]{cmun}
-\setsansfont{LXGWWenKai}[Path="fonts/",UprightFont = *-Regular,BoldFont = *-Bold]
+\setsansfont[Path="fonts/",UprightFont = *-Regular]{ZhuqueFangsong}
 % \setsansfont{Arial}
 % \setsansfont[Path="fonts/"]{LinLibertineT.pfb.ttf}
 % \setsansfont[Path="fonts/",UprightFont = * ,BoldFont = *Bold,ItalicFont = *Italic]{NimbusRomNo9T}
@@ -53,7 +53,7 @@
 \setbeamerfont{structure}{family=\OptimaFont}
 \setbeamerfont{footline}{family=\OptimaFont}
 % \setCJKsansfont[Path="fonts/",UprightFont = *-Regular,BoldFont = *-Bold]{NotoSansSC}
-\setCJKsansfont[Path="fonts/",UprightFont = *-Regular,BoldFont = *-Bold]{LXGWWenKai}
+\setCJKsansfont[Path="fonts/",UprightFont = *-Regular]{ZhuqueFangsong}
 % colors
 % greys
 \definecolor{jdlightestgrey}{HTML}{ECECEC}
@@ -296,17 +296,30 @@
 \setbeamertemplate{section in toc}
 {\quad{\small\color{jdblue}\bfseries \inserttocsectionnumber}~~\inserttocsection}
 
+% Difine logos
 \newcommand{\ustcLogo}{\begin{tikzpicture}[overlay,remember picture]
   \node[left=0.3cm] at (current page.25){
-  \includegraphics[width=0.8cm]{ustc.png}
+  \includegraphics[width=0.8cm]{logo/ustc.jpg}
   };
   \end{tikzpicture}}
   
   \newcommand{\linkeLogo}{\begin{tikzpicture}[overlay,remember picture]
       \node[left=0.3cm,yshift=15] at (current page.25){
-          \includegraphics[width=2cm]{linke.png}
+          \includegraphics[width=2cm]{logo/linke.png}
       };
       \end{tikzpicture}}
+
+\newcommand{\HKULogo}{\begin{tikzpicture}[overlay,remember picture]
+  \node[left=0.3cm] at (current page.25){
+  \includegraphics[width=0.8cm]{logo/hku.jpg}
+  };
+  \end{tikzpicture}}
+
+  \newcommand{\AIoTLogo}{\begin{tikzpicture}[overlay,remember picture]
+  \node[left=0.3cm,yshift=5] at (current page.25){
+  \includegraphics[width=1.5cm]{logo/aiot-logo.png}
+  };
+  \end{tikzpicture}}
   
   \newcommand{\noLogo}{}
 

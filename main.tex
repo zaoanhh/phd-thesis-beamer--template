@@ -1,0 +1,78 @@
+% !TeX spellcheck = en_GB
+\documentclass[english,11pt,aspectratio=169,xcolor=table]{beamer}
+% \usepackage[overridenote]{pdfpc} %可以使用pdfdc加note，实现pdf的演讲者模式
+\usepackage[hidenotes]{pdfpc} %hidenotes 是隐藏note，overridenote是显示note
+\input{tex/setup}
+\input{tex/setup-colors}
+\input{tex/setup-settings}
+
+\usetheme{JD}
+\beamertemplatenavigationsymbolsempty
+% \usepackage{mathpazo} % With Euler Font
+\usepackage{eulerpx}
+
+% \usepackage{fourier}
+\usepackage{siunitx}
+% 使用参考文献
+% \usepackage[backend=biber,style=numeric,sorting=none,doi=false,url=false]{biblatex}
+% \addbibresource{bib/ref.bib}
+% \addbibresource{bib/zotero.bib}
+
+\usepackage{bbding}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{makecell}
+\newcommand{\mylogo}{\AIoTLogo}%linkeLogo, ustcLogo, or AIoTLogo or HKULogo or noLogo
+\newcommand{\romanN[1]}{\uppercase\expandafter{\romannumeral #1}}
+\newcommand{\titlewithlogo[1]}{\frametitle{\titlestyle{#1} \mylogo}}
+% header fields: usage
+% \field
+%     [short form (footline)]
+%     {long form on title page}
+%
+\graphicspath{{figures/}}
+\titlegraphic{\includegraphics[height=0.8cm]{logo/hku1.png}} % 设置首页的logo
+\title
+    [Open Source Modelling of Energy Infrastructure]
+    {Open Source Modelling and Optimisation of\\ Energy Infrastructure at Urban Scale}
+
+\subtitle{Final presentation} % short version unused by this template
+\author
+    [J. Dorfner]
+    {尚飞}
+\institute
+    [\hypersetup{urlcolor=jdgrey}%
+     \href{http://www.tum.de/}{TUM} %
+     \href{http://www.ei.tum.de/}{EI} %
+     \href{http://www.ens.ei.tum.de/}{ENS}]
+    {Chair of Renewable and Sustainable Energy Systems\\%
+     Department of Electrical and Computer Engineering\\%
+     Technical University of Munich}
+\date
+    [12/2016]
+    {06 December 2016}
+
+\begin{document}
+
+\maketitle
+
+\begin{frame}{Outline}
+    \tableofcontents
+\end{frame}
+
+
+\begin{frame}
+    \titlewithlogo[test]
+
+    \begin{bluebox}{Hello}
+				你好
+	\end{bluebox}
+
+    \begin{examplebox}{旁路径环境干扰抑制技术}
+			$$
+                E=mc^2
+            $$
+		\end{examplebox}
+
+\end{frame}
+\end{document}
